@@ -1,0 +1,18 @@
+.panel {
+  background-color: $light-gray;
+  border-radius: 0.2rem;
+
+  @include e('header') {
+    padding: 1rem;
+    font-weight: bold;
+
+  }
+
+  @include e('body') {
+    padding: 1rem;
+  }
+
+  @include e('footer') {
+    padding: 1rem;
+  }
+}

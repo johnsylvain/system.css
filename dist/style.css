@@ -1,0 +1,21 @@
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem; }
+  .container--small {
+    max-width: 500px; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+      padding: 0.8rem; } }
+
+.panel {
+  background-color: #efefef;
+  border-radius: 0.2rem; }
+  .panel__header {
+    padding: 1rem;
+    font-weight: bold; }
+  .panel__body {
+    padding: 1rem; }
+  .panel__footer {
+    padding: 1rem; }

@@ -1,6 +1,5 @@
 .panel {
   background-color: $wall;
-  color: $medium-gray;
   border-radius: $default-border-radius;
 
   @include e('header') {

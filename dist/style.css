@@ -1,3 +1,20 @@
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -61,7 +78,6 @@ table {
 
 .panel {
   background-color: #EEF0F0;
-  color: #555555;
   border-radius: 0.2rem; }
   .panel__header {
     padding: 1rem;
@@ -92,47 +108,48 @@ table {
   .button:hover {
     opacity: 1; }
 
-.menubar {
-  background: white;
+.nav:before, .nav:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.nav:after {
+  clear: both; }
+
+.nav__list {
   list-style: none;
-  font-size: 14px;
-  padding: 0 10px; }
-  .menubar > li {
-    display: inline-block;
-    position: relative; }
+  position: relative;
+  float: left; }
+  .nav__list--right {
+    float: right; }
 
-.menubar-item {
-  color: black;
+.nav__item {
+  position: relative;
+  float: left; }
+
+.nav__link {
   display: block;
-  padding: 10px 14px;
-  text-decoration: none; }
-  .menubar-item:hover, .is-selected .menubar-item {
-    background: #29a7f5;
-    color: white; }
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 1rem 1.2rem;
+  color: #3F536E;
+  border-bottom: 3px solid transparent; }
+  .nav__link--active {
+    color: #6190E8;
+    border-bottom: 3px solid #6190E8; }
+  .nav__link:hover {
+    color: #6190E8; }
 
-.menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  background: white;
-  list-style: none;
-  width: 15em;
-  padding: 10px 0; }
-  .is-selected .menu {
-    display: block; }
-
-.menu-item {
-  color: black;
+.nav__brand {
+  padding: 1rem 0;
+  font-weight: 500;
   display: block;
-  padding: 8px 20px;
-  text-decoration: none; }
-  .menu-item:hover {
-    background: #29a7f5;
-    color: white; }
+  float: left; }
 
-.menu-separator {
-  border-top: 1px solid #ddd;
-  margin: 8px; }
+.nav--vertical__list {
+  float: none; }
 
 @font-face {
   font-family: "feather";
@@ -839,4 +856,5 @@ table {
   content: "\e8fe"; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #3F536E; }

@@ -15,6 +15,9 @@ $curtain: #F0D0D5;
 $door: #F1E4ED;
 $wall: #EEF0F0;
 
+// Typography
+$text-black: #3F536E;
+
 $font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $default-border-radius: 0.2rem;
 
@@ -36,4 +39,5 @@ $default-border-radius: 0.2rem;
 
 body {
   font-family: $font;
+  color: $text-black;
 }

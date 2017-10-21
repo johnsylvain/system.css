@@ -3,6 +3,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
+  padding-top: 0;
 
   @include m('small') {
     max-width: 500px;
@@ -10,5 +11,7 @@
   
   @include tablet {
     padding: 0.8rem;
+    padding-top: 0;
+  
   }
 }

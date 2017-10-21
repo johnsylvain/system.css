@@ -32,6 +32,7 @@ $default-border-radius: 0.2rem;
 
 // Components
 @import 'components/container';
+@import 'components/grid';
 @import 'components/panel';
 @import 'components/button';
 @import 'components/navigation';
@@ -40,4 +41,5 @@ $default-border-radius: 0.2rem;
 body {
   font-family: $font;
   color: $text-black;
+  line-height: 130%
 }

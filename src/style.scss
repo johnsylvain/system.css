@@ -26,9 +26,11 @@ $default-border-radius: 0.2rem;
 @import 'mixins/bem';
 @import 'mixins/reset';
 @import 'mixins/queries';
+@import 'mixins/typography';
 
 // HTML Reset
 @include reset;
+@include typography;
 
 // Components
 @import 'components/container';
@@ -38,8 +40,7 @@ $default-border-radius: 0.2rem;
 @import 'components/navigation';
 @import 'components/icons';
 
-body {
-  font-family: $font;
-  color: $text-black;
-  line-height: 130%
+
+img.img-responsive {
+  width: 100%;
 }

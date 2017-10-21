@@ -1,0 +1,28 @@
+@mixin typography {
+  body, html {
+    font-family: $font;
+    color: $text-black;
+    line-height: 130%;
+    font-size: 12pt;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  p:not(:last-of-type) {
+    margin-bottom: 0.625rem;
+  }
+  
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1rem; }
+
+  a:not([class]) {
+    color: $brand-color; 
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

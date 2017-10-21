@@ -4,9 +4,10 @@
   padding: 0;
   margin: 0;
   width: auto;
+  overflow: hidden;
 
   @include e('header') {
-    padding: 1rem;
+    padding: 1rem 1rem 0.5rem;
     font-weight: bold;
 
   }

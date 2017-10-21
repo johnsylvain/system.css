@@ -1,10 +1,10 @@
 @font-face {
   font-family: "feather";
-  src: url('../src/fonts/feather.eot?t=1501841394106'); /* IE9*/
-  src: url('../src/fonts/feather.eot?t=1501841394106#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../src/fonts/feather.woff?t=1501841394106') format('woff'), /* chrome, firefox */
-  url('../src/fonts/feather.ttf?t=1501841394106') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('../src/fonts/feather.svg?t=1501841394106#feather') format('svg'); /* iOS 4.1- */
+  src: url('./fonts/feather.eot?t=1501841394106'); /* IE9*/
+  src: url('./fonts/feather.eot?t=1501841394106#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./fonts/feather.woff?t=1501841394106') format('woff'), /* chrome, firefox */
+  url('./fonts/feather.ttf?t=1501841394106') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('./fonts/feather.svg?t=1501841394106#feather') format('svg'); /* iOS 4.1- */
 }
 
 .icon {

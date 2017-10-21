@@ -7,9 +7,9 @@
   overflow: hidden;
 
   @include e('header') {
-    padding: 1rem 1rem 0.5rem;
-    font-weight: bold;
-
+    padding: 1rem 1rem 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
   }
 
   @include e('body') {

@@ -1,11 +1,14 @@
 $pad: 1rem;
 
-/*-- our cleafix hack -- */ 
-.row:before, 
-.row:after {
-  content:"";
-  display: table ;
-  clear:both;
+.row {
+  margin-bottom: 1rem;
+  
+  &:before, 
+  &:after {
+    content:"";
+    display: table ;
+    clear:both;
+  }
 
 }
 

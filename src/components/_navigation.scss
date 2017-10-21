@@ -53,8 +53,39 @@
   }
 
   @include m('vertical') {
-    @include e('list') {
+    .nav__list, .nav__item {
       float: none;
+    }
+
+    .nav__link {
+      position: relative;
+      border:0;
+      display:block;
+      text-decoration:none;
+      color: $text-black;
+      border-left: 0px solid transparent;
+      transition: border-left 0.1s ease, color 0.1s ease;
+
+      
+      @include m('active') {
+        &:after {
+          content: '';
+          height: 100%;
+          width: 6px;
+          background-color: $brand-color;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 0 $default-border-radius $default-border-radius 0;
+          box-shadow: 0 0 4px rgba($brand-color, 0.5);
+        }
+        background-color: $wall;
+        color: $brand-color;
+      }
+  
+      &:hover {
+        color: $brand-color;      
+      }
     }
   }
 }

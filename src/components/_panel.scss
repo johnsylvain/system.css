@@ -1,6 +1,7 @@
 .panel {
-  background-color: $light-gray;
-  border-radius: 0.2rem;
+  background-color: $wall;
+  color: $medium-gray;
+  border-radius: $default-border-radius;
 
   @include e('header') {
     padding: 1rem;

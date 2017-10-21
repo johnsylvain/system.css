@@ -1,0 +1,31 @@
+.button {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  color: $white;
+  background-color: $brand-color;
+  border-radius: $default-border-radius;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 300;
+  opacity: 0.95;
+
+  @include m('success') {
+    background-color: $success;
+  }
+
+  @include m('info') {
+    background-color: $info;
+  }
+
+  @include m('error') {
+    background-color: $error;
+  }
+
+  @include m('warning') {
+    background-color: $warning;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}

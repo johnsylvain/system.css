@@ -1,13 +1,39 @@
 // Variables
-$light-gray: #efefef;
 $medium-gray: #555555;
 $white: #ffffff;
+$brand-color: #6190E8;
+
+// Buttons
+$success: #13CE66;
+$warning: #FFC82C;
+$error: #FF4949;
+$info: #78A4FA;
+
+// Secondary
+$roof: #C2ABC7;
+$curtain: #F0D0D5;
+$door: #F1E4ED;
+$wall: #EEF0F0;
+
+$font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$default-border-radius: 0.2rem;
+
 
 // Mixins
 @import 'mixins/bem';
-// @import 'mixins/typography';
+@import 'mixins/reset';
 @import 'mixins/queries';
+
+// HTML Reset
+@include reset;
 
 // Components
 @import 'components/container';
 @import 'components/panel';
+@import 'components/button';
+@import 'components/navigation';
+@import 'components/icons';
+
+body {
+  font-family: $font;
+}

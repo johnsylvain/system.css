@@ -1,0 +1,25 @@
+.form {
+  padding: 1rem 0;
+  font-size: 0.9rem;
+
+  @include e('input') {
+    width: 100%;
+    border: 2px solid $wall;
+    padding: 1rem;
+    border-radius: $default-border-radius;
+    font-size: inherit;
+    color: $text-black;
+    min-width: 100%;
+    max-width: 100%;
+    
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+    
+    &:focus { 
+      outline: 0;
+      box-shadow: 0 0 12px rgba($wall, 1);
+    }
+  }
+
+}

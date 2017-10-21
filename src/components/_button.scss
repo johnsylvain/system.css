@@ -1,3 +1,11 @@
+$button-types: 'success', 'info', 'error', 'warning';
+$button-colors: $success, $info, $error, $warning;
+
+@mixin form-button {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
+
 .button {
   display: inline-block;
   padding: 0.4rem 1rem;
@@ -8,21 +16,23 @@
   font-size: 0.8rem;
   font-weight: 300;
   opacity: 0.95;
+  outline: none;
+  border:none;
+  cursor: pointer;
 
-  @include m('success') {
-    background-color: $success;
+  @include m('form') {
+    @include form-button;
   }
 
-  @include m('info') {
-    background-color: $info;
-  }
+  @each $current-type in $button-types {
+    @include m($current-type) {
+      $i: index($button-types, $current-type);
+      background-color: nth($button-colors, $i);
 
-  @include m('error') {
-    background-color: $error;
-  }
-
-  @include m('warning') {
-    background-color: $warning;
+      @include m('form') {
+        @include form-button;
+      }
+    }
   }
 
   &:hover {

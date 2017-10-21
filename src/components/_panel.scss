@@ -5,15 +5,16 @@
   margin: 0;
   width: auto;
   overflow: hidden;
+  padding-bottom: 0.5rem;
 
   @include e('header') {
-    padding: 1rem 1rem 1rem;
+    padding: 1rem 1rem 0.5rem;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   @include e('body') {
-    padding: 0 1rem 1rem;
+    padding: 0 1rem 0.5rem;
   }
 
   @include e('footer') {

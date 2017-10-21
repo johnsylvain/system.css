@@ -19,12 +19,7 @@
         </li>
         <li class="nav__item">
             <a href="#" class="nav__link">
-              About
-            </a>
-        </li>
-        <li class="nav__item">
-            <a href="#" class="nav__link">
-              Contact
+              Components
             </a>
         </li>
       </ul>
@@ -61,11 +56,11 @@
   </section>
   <div class="container">
     <h2>Buttons</h2>
-    <a href="#" class="button">Default</a>
-    <a href="#" class="button button--success">Success</a>
-    <a href="#" class="button button--info">Info</a>
-    <a href="#" class="button button--error">Error</a>
-    <a href="#" class="button button--warning">Warning</a>
+    <button class="button">Default</button>
+    <button class="button button--success">Success</button>
+    <button class="button button--info">Info</button>
+    <button class="button button--error">Error</button>
+    <button class="button button--warning">Warning</button>
   </div>
   <div class="container">
     <h2>Navigation</h2>
@@ -98,5 +93,20 @@
       </ul>
     </nav>
   </div>
+  <section class="container">
+    <h2>Forms</h2>
+    <form class="form">
+      <div class="row">
+        <div class="col-6">
+          <input type="email" class="form__input" placeholder="Email Address">
+        </div>
+        <div class="col-6">
+          <input type="password" class="form__input" placeholder="Password">
+        </div>
+      </div>
+      <textarea name="" id="" cols="30" rows="10" class="form__input" placeholder="Message"></textarea>
+      <button type="submit" class="button button--success--form">Submit</button>
+    </form>
+  </section>
 </body>
 </html>

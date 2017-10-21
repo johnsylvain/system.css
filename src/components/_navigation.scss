@@ -32,16 +32,33 @@
     padding: 1rem 1.2rem;
     color: $text-black;
     border-bottom: 0px solid transparent;
-    transition: border-bottom 0.1s ease, color 0.1s ease;
-
+    transition: color 0.2s ease;
+    
+    &:after {
+      transition: height 0.2s ease;
+      content: '';
+      height: 0px;
+      width: 100%;
+      background-color: $brand-color;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-radius: $default-border-radius $default-border-radius 0 0;
+      box-shadow: 0 0 4px rgba($brand-color, 0.6);
+    }
+    
     @include m('active') {
       color: $brand-color;
-      border-bottom: 3px solid $brand-color;
+      &:after {
+        height: 4px;
+      }
     }
 
     &:hover {
       color: $brand-color;
-      border-bottom: 3px solid $brand-color;      
+      &:after {
+        height: 4px;
+      }    
     }
   }
 
@@ -63,28 +80,38 @@
       display:block;
       text-decoration:none;
       color: $text-black;
-      border-left: 0px solid transparent;
       transition: border-left 0.1s ease, color 0.1s ease;
+
+      &:after {
+        transition: width 0.2s ease;
+        content: '';
+        height: 100%;
+        width: 0px;
+        background-color: $brand-color;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 0 $default-border-radius $default-border-radius 0;        
+        box-shadow: 0 0 4px rgba($brand-color, 0.6);
+      }
 
       
       @include m('active') {
         &:after {
-          content: '';
-          height: 100%;
           width: 6px;
-          background-color: $brand-color;
-          position: absolute;
-          top: 0;
-          left: 0;
-          border-radius: 0 $default-border-radius $default-border-radius 0;
-          box-shadow: 0 0 4px rgba($brand-color, 0.5);
         }
         background-color: $wall;
         color: $brand-color;
       }
   
       &:hover {
-        color: $brand-color;      
+        color: $brand-color;
+        &:after {
+          height: 100%;
+          width: 6px;
+          top: 0;
+          left: 0;
+        }    
       }
     }
   }

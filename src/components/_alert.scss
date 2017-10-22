@@ -14,7 +14,6 @@ $alert-colors: $success, $info, $error, $warning;
       
       color: desaturate(darken($color, 20%), 50);
       background-color: transparentize($color, 0.9);
-      border: 1px solid transparentize($color, 0.5);
     
     }
   }

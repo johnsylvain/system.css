@@ -29,14 +29,19 @@ $pad: 1rem;
   float: left; 
   min-height: 1px; 
 
-  padding-right: $pad;
+  padding: 0 $pad/2;
+
   .row &:last-of-type {
     padding-right: 0;
   }
 
+  .row &:first-of-type {
+    padding-left: 0;
+  }
+
   @include tablet {
     width: 100%;
-    padding-right: 0;
+    padding: 0;
     &:not(:last-of-type){
       margin-bottom: 1rem;
     }

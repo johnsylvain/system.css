@@ -30,12 +30,14 @@ $button-colors: $success, $info, $error, $warning;
 
   @include m('default') {
     background-color: white !important;
-    border: 2px solid $wall !important;
+    // border: 2px solid $wall !important;
+    box-shadow: inset 0 0 0 2px $wall;
     color: $text-black !important;
 
     @include m('form') {
       background-color: white !important;
-      border: 2px solid $wall !important;
+      // border: 2px solid $wall !important;
+      box-shadow: inset 0 0 0 2px $wall;
       color: $text-black !important;  
       @include form-button;
     }

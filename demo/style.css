@@ -142,13 +142,15 @@ strong {
 [class*='col-'] {
   float: left;
   min-height: 1px;
-  padding-right: 1rem; }
+  padding: 0 0.5rem; }
   .row [class*='col-']:last-of-type {
     padding-right: 0; }
+  .row [class*='col-']:first-of-type {
+    padding-left: 0; }
   @media (max-width: 768px) {
     [class*='col-'] {
       width: 100%;
-      padding-right: 0; }
+      padding: 0; }
       [class*='col-']:not(:last-of-type) {
         margin-bottom: 1rem; } }
 
@@ -193,11 +195,11 @@ strong {
     padding: 1rem 2rem; }
   .button--default {
     background-color: white !important;
-    border: 2px solid #EEF0F0 !important;
+    box-shadow: inset 0 0 0 2px #EEF0F0;
     color: #3F536E !important; }
     .button--default--form {
       background-color: white !important;
-      border: 2px solid #EEF0F0 !important;
+      box-shadow: inset 0 0 0 2px #EEF0F0;
       color: #3F536E !important;
       font-size: 1rem;
       padding: 1rem 2rem; }

@@ -6,6 +6,10 @@
     font-size: 12pt;
   }
 
+  p {
+    line-height: 150%;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1.5rem;
     font-weight: 500;
@@ -33,5 +37,11 @@
 
   strong {
     font-weight: 700;
+  }
+
+  blockquote {
+    border-left: 6px solid darken($wall, 10);
+    padding: 1rem;
+    background-color: transparentize($wall, 0.4);
   }
 }

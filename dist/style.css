@@ -54,6 +54,9 @@ body, html {
   line-height: 130%;
   font-size: 12pt; }
 
+p {
+  line-height: 150%; }
+
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
   font-weight: 500; }
@@ -82,13 +85,18 @@ a:not([class]) {
 strong {
   font-weight: 700; }
 
+blockquote {
+  border-left: 6px solid #d3d8d8;
+  padding: 1rem;
+  background-color: rgba(238, 240, 240, 0.6); }
+
 .container {
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
   padding: 1rem; }
-  .container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
-    margin: 2rem 0 1rem; }
+  .container--pad {
+    padding: 2rem 1rem; }
   .container--small {
     max-width: 500px; }
   @media (max-width: 768px) {
@@ -301,6 +309,8 @@ strong {
     vertical-align: baseline; }
   .nav--vertical .nav__list, .nav--vertical .nav__item {
     float: none; }
+  .nav--vertical .nav__item {
+    margin-bottom: 0.5rem; }
   .nav--vertical .nav__link {
     position: relative;
     border: 0;

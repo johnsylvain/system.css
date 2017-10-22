@@ -1,0 +1,21 @@
+$alert-types: 'success', 'info', 'error', 'warning';
+$alert-colors: $success, $info, $error, $warning;
+
+.alert {
+  padding: 1em;
+  border-radius: $default-border-radius; 
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  
+  @each $current-type in $alert-types {
+    @include m($current-type) {
+      $i: index($alert-types, $current-type);
+      $color: nth($alert-colors, $i);
+      
+      color: desaturate(darken($color, 20%), 50);
+      background-color: transparentize($color, 0.9);
+      border: 1px solid transparentize($color, 0.5);
+    
+    }
+  }
+}

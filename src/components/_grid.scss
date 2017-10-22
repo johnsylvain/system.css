@@ -37,7 +37,9 @@ $pad: 1rem;
   @include tablet {
     width: 100%;
     padding-right: 0;
-    margin-bottom: 1rem;
+    &:not(:last-of-type){
+      margin-bottom: 1rem;
+    }
   }
 }
 

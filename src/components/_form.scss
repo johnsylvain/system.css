@@ -2,6 +2,10 @@
   padding: 1rem 0;
   font-size: 0.9rem;
 
+  @include e('controls') {
+    margin-bottom: 1rem;
+  }
+
   @include e('input') {
     width: 100%;
     border: 2px solid $wall;

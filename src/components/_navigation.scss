@@ -22,6 +22,9 @@
   @include e('item') {
     position:relative;
     float:left;
+    &:not(:last-of-type) {
+      margin-right: 1rem;
+    }
   }
   
   @include e('link') {
@@ -66,7 +69,9 @@
     padding: 1rem 0;
     font-weight: 500;
     display: block;
-    float: left;    
+    float: left;
+    font-size: 1.1rem;
+    vertical-align: baseline; 
   }
 
   @include m('vertical') {

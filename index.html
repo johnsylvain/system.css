@@ -1,1 +1,39 @@
-My GitHub Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>System.css</title>
+  <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <nav class="nav">
+      <span class="nav__brand">System.css</span>
+      <ul class="nav__list--right">
+        <li class="nav__item">
+          <a href="#/" class="nav__link">
+            <i class="icon icon-home"></i> Home
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#/components" class="nav__link">
+            <i class="icon icon-settings"></i> Components
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div id="view"></div>
+  
+  <script type="text/html" id="main">
+    <div>
+      <%=content%>
+    </div>
+  </script>
+  <script src="./dist/bundle.js"></script>
+</body>
+</html>

@@ -34,7 +34,6 @@ var app = {
     }
 
     children.forEach(function(node) {
-      console.log(node.children[0])
       if (node.children[0].getAttribute('href') === _this.location) {
         node.children[0].classList.add('nav__link--active');
       } else {

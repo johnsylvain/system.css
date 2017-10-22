@@ -85,6 +85,12 @@ a:not([class]) {
 strong {
   font-weight: 700; }
 
+.center {
+  text-align: center; }
+
+footer {
+  padding: 3rem; }
+
 blockquote {
   border-left: 6px solid #d3d8d8;
   padding: 1rem;

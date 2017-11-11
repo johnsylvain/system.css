@@ -3965,7 +3965,7 @@ exports = module.exports = __webpack_require__(40)(undefined);
 
 
 // module
-exports.push([module.i, "footer {\n  padding: 3rem; }\n\n.center {\n  text-align: center; }\n", ""]);
+exports.push([module.i, "footer {\n  padding: 3rem; }\n\n.center {\n  text-align: center; }\n\n.code {\n  background-color: #EEF0F0;\n  color: #555555;\n  border-radius: 2px;\n  margin-bottom: 1rem;\n  overflow: hidden; }\n  .code .code__header {\n    font-size: 0.8rem;\n    padding: 0.5rem 1rem;\n    background-color: #d3d8d8; }\n  .code pre {\n    font-family: monospace;\n    padding: 1rem; }\n", ""]);
 
 // exports
 

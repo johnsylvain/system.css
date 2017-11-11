@@ -5,3 +5,22 @@ footer {
 .center {
   text-align: center
 }
+
+.code {
+  background-color: #EEF0F0;
+  color: #555555;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+
+  .code__header {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    background-color: darken(#EEF0F0, 10%);
+  }
+
+  pre {
+    font-family: monospace;
+    padding: 1rem;
+  }
+}
